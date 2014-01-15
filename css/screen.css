@@ -1,0 +1,1323 @@
+@import url('reset.css');
+/* kuler.adobe.com > rockefeller palette */
+
+
+body {
+    font: 12px Verdana, Arial, sans-serif;
+    color:#555;
+    background:#444;
+}
+
+#headNav {
+    background-color:#2d2a62;
+    color:#fff;
+    border-bottom:1px solid #eee;
+    margin-bottom:5px;
+    padding:0px;
+}
+
+a.topNavbarLink:link,
+a.topNavbarLink:hover,
+a.topNavbarLink:visited,
+a.topNavbarLink:visited:hover   {
+    color:#fff;
+    text-decoration:none;
+    font-size:11px;
+}
+
+#omeka-logo {
+    text-decoration:none;
+}
+
+h1, h2, h3, h4, h5 {
+    color:#77403e;
+    padding:8px 0 5px 0;
+}
+
+h1 {
+    font-family: "Trebuchet MS";
+    font-size:22px;
+    color:#77403e;
+}
+
+h1.head {
+    font-family:"Trebuchet MS";
+    font-size:22px;
+    padding:10px;
+    background-color:#000;
+    border-bottom:5px solid #ccc;
+    color:#fff;
+}
+
+h1.head a {
+    color:#fff;
+}
+
+h2 {
+    font-size:2em;
+    color: #77403e;
+}
+
+h3 {
+    font-size:1em;
+    font-weight:bold;
+    padding-top:15px;
+}
+
+h5 {
+    float: right;
+    padding:1em 1em;
+}
+
+a img {
+    border:none;
+}
+
+p,ul,ol,dl {
+    font-size:1em;
+    margin-bottom:1.5em;
+}
+
+ul,ol,dl {
+    padding: 0 18px 0 18px;
+}
+
+i,em {
+    font-size:1em;
+    font-style:italic;
+}
+
+b,strong {
+    font-size:1em;
+    font-weight:bold; 
+}
+
+a:link {
+    color:#77403e;
+}
+
+a:visited {
+    color: #77403e;
+}
+
+a:hover {
+    color: #77403e;
+    text-decoration: none;
+}
+
+h1 a, h1 a:visited {
+    text-decoration: none;
+    color:#fff;
+}
+
+h5 a, h5 a:visited {
+    color: #77403e;
+}
+
+/* == Structure == */
+
+#wrap {
+    width:950px;
+    margin:0px auto;
+    overflow:hidden;
+    background-color:#fff;
+}
+
+#header {
+    clear: both;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#content {
+    float: right;
+    overflow: hidden;
+    min-height:400px;
+    border-left: 1px solid #c7b5a2;
+    padding:0 9px;
+    width: 713px;
+    background:#fff;
+}
+
+html.brown #content {
+    padding:0 9px;
+    width: 712px;
+    border: none;
+}
+
+#footer {
+    clear: both;
+    padding:0px;
+    margin:0;
+    margin-top:5px;
+    color:#fff;
+    background-color:#2d2a62;
+    font-size:11px;
+    min-height:18px;
+    vertical-align:middle;
+    border-top:1px solid #eee;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:visited {
+    color: #fff;
+}
+    
+
+/* == Content == */
+
+.exhibit-sections h3 {
+    margin: 0 0 .5em;
+    font-weight:bold;
+    font-size: 1.2em;
+    //text-transform: uppercase; letter-spacing: .1em;
+}
+
+.exhibit-sections h3 a,
+/exhibit-sections h3 a:visited {
+    text-decoration: none;
+    color: #77403e;
+}
+
+.exhibit-sections h3 a:hover {
+    color: #dbcab1;
+}
+
+.exhibit-sections p {
+    margin: 0 0 1.8em;
+    padding: 0 18px 0 0;
+}
+  
+.commentary {
+    background:#eee;
+    padding:18px;
+}
+
+.commentary p {
+    font-size:1.1em;
+    line-height:1.63636;
+}
+  
+/* == Layout == */
+
+.prevnext {
+    clear:both; 
+}
+
+.gallery-full-left,
+.gallery-full-right,
+.gallery-thumbnails,
+.gallery-thumbnails-text-bottom,
+.gallery-thumbnails-text-top,
+.image-list-left,
+.image-list-left-thumbs,
+.image-list-right,
+.image-list-right-thumbs,
+.text-full,
+.text-image-left,
+.text-image-right {
+    clear: both;
+}
+
+/* LAYOUT: GALLERY-THUMBNAILS (ALL) */ 
+.gallery-thumbnails-text-bottom .exhibit-item,
+.gallery-thumbnails-text-top .exhibit-item {
+    text-align:center;
+    width:22%;
+    float:none;
+    display:inline-block;
+    vertical-align:top; 
+/*    padding: .5em; */
+    padding-top: .5em; 
+}
+
+/* override layout.css */
+.gallery-thumbnails-text-bottom .exhibit-item img,
+.gallery-thumbnails-text-top .exhibit-item img {
+    max-width:160px;
+    max-height:160px;
+}
+
+/* LAYOUT: GALLERY-FULL-LEFT AND LAYOUT: GALLERY-FULL-RIGHT */
+.gallery-full-left .primary {
+    float:left;
+    width:350px;
+}
+
+.gallery-full-left .primary IMG {
+    width:350px;
+}
+
+.gallery-full-left .secondary {
+    width:250px;
+    float:right;
+}
+
+.gallery-full-right .primary {
+    float:right;
+    width:350px;
+}
+
+.gallery-full-right .primary IMG {
+    width:350px;
+}
+
+/* LAYOUT: TEXT-IMAGE-LEFT AND LAYOUT: TEXT-IMAGE-RIGHT */
+.text-image-left IMG {
+    width: 350px;
+    float:left; 
+}
+
+.text-image-right IMG {
+    width: 350px;
+    float:right; 
+}
+
+/* generic */
+.image-text-group {
+    clear:both;
+    border-bottom:1px solid #eee;
+}
+
+/* LAYOUT: IMAGE-LIST-LEFT-THUMBS AND LAYOUT: IMAGE-LIST-RIGHT-THUMBS */ 
+.image-list-left-thumbs .exhibit-item {
+    float:left;
+    width:200px;
+    padding:5px;
+}
+
+.image-list-left-thumbs .exhibit-text {
+    float:right;
+    width:490px;
+    padding:5px;
+}
+
+.image-list-right-thumbs .exhibit-item {
+    float:right;
+    width:200px;
+    padding:5px;
+}
+
+.image-list-right-thumbs .exhibit-text {
+    float:left;
+    width:490px;
+    padding:5px;
+}
+
+/* generic */
+.item img,
+.exhibit-item img {
+    margin-bottom: 1.5em;
+}
+
+/* == Item Show == */
+
+.item-title {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.field {
+    padding-bottom: 1em;
+}
+
+.field-value {
+    padding-left: 1.5em;
+    margin-top: 0.75em;
+}
+
+.tags {
+    margin-bottom: 1em;
+}
+
+#item-files {
+    margin-bottom:1.5em;
+    text-align:center;
+}
+
+.item-file {
+    background:#eee;
+    text-align:center;
+    padding:5px;
+    margin-bottom:1.5em;
+}
+
+.footer11px,
+.copyright-footer { 
+    font-size: 11px; 
+    width:98%; 
+    text-align:center; 
+    color:#fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+.footer11px a,
+.footer11px a:visited {
+    color:#eee;
+}
+
+#solidBlock {
+    background-color:#77403E;
+    width:744px;
+    overflow:hidden;
+    margin-left:-20px;
+    text-align:right;
+}
+
+#solidBlock h1 {
+    color:#fff;
+    font-family:"Trebuchet MS"; font-size:22px;color:#fff;
+    border:none;
+    background-color:transparent;
+    padding:0;
+    margin:0;
+}
+
+#solidBlock a {
+    color:#fff;
+}
+
+#solidBlock img {
+    vertical-align:bottom;
+}
+
+#solidBlockSecondary {
+    background-color:#77403e;
+    height:auto;
+}
+
+#primary h1 {
+    font-size:22px;
+    color: #77403e;
+    margin-bottom:1.25em;
+    line-height:1.125em;
+    border-bottom:1px solid #77403e;
+}
+
+#primary h2 {
+    font-size:1.5em;
+    color: #77403e;
+    margin-bottom:1.25em;
+    line-height:1.125em;
+    font-weight:bold;
+}
+
+.element-set h2 {
+    display:none;
+}
+
+li.item-title {
+    font-weight:bold; 
+}
+
+.permalink img.full {
+    width:450px;
+    height:auto;
+}
+
+.bigImage {
+    width:450px;
+    padding-left:1px;
+    padding-right:1px;
+    margin:1px;
+    overflow:hidden;
+}
+
+.bigImage img {
+    width:450px;
+    height:auto;
+}
+
+div.element-text-empty {
+    display:none;
+}
+
+/*******************************************************/
+/* Styles specific to exhibits-related classes and ids */
+/*******************************************************/
+
+/* fcd1, 7/26/13: id exhibit-pages used in plugins/ExhibitBuilder/views/public/exhibits/summary.php */
+/* around lhs nav to exhibit pages. cul-general uses exhibit-nav (id and class) and */
+/* exhibit-section-nav exhibit-section-nav-home (class). To simplify, I would like to migrate */
+/* all rules to exhibit-pages. First set: copy all rules to exhibit-pages, then weed out what */
+/* is not needed. Also mimicked the element.class, etc. rules*/
+#exhibit-pages {
+    /* copied from exhibit-nav (class and id) */
+    vertical-align: top;
+    float: left;
+    border-right:1px solid #c7b5a2;
+    background:#fff;
+    width: 163px;
+    padding: 0 18px;
+    align:top;
+    background:#661E19;
+    width:220px;
+    padding: 0; 
+    width:220px;
+    border-right:0px;
+    /* copied from exhibit-section-nav */
+    width: 164px;
+    overflow:hidden; 
+    background: #661E19; 
+    width:100%;
+    display:block;
+    overflow:hidden; 
+    /* copied from exhibit-section-nav-home */
+    background:#994444;
+    font-weight:bold;
+}
+
+/* fcd1, 7/26/13: following are copied from exhibit-section-nav rules below and */
+/* exhibit-section-nav is replaced with exhibit-pages (id). START HERE: */
+#exhibit-pages li {
+    width:auto;
+    list-style-type:none;
+    display:block;
+}
+
+#exhibit-pages li a {
+    display:block;
+    text-decoration:none;
+    padding:.5em;
+}
+
+ul.exhibit-pages {
+    padding: 0; 
+    margin: 0; 
+    width=100%;
+}
+
+.exhibit-pages li {
+    width:auto;
+    list-style-type:none;
+    display:block;
+    text-align:left;
+    line-height:1.5em;
+    padding:0.5em 0;
+}
+
+.exhibit-pages li a {
+    color:#fff;
+    text-decoration:none;
+    width:100%;
+    display:block;
+    padding:0.5em 0.5em 0.5em 1em
+}
+/* END HERE (see above) */
+
+/* exhibit-nav (id and class) used in /exhibit-builder/exhibits/item.php, summary.php, show.php */
+/* similar styles were also define in burgundy.css, see below */
+.exhibit-nav {
+    vertical-align: top;
+}
+
+#exhibit-nav {
+    float: left;
+    border-right:1px solid #c7b5a2;
+    /* fcd1, 7/30/13: comment this  out for now */
+/*    background:#fff; */
+    width: 163px;
+    padding: 0 18px;
+}
+
+/* Following exhibit-nav rules come from the original burgundy.css */
+/* see how it jives with what is above */
+.exhibit-nav { 
+    align:top;
+    background:#661E19;
+    width:220px;
+}
+
+#exhibit-nav { 
+    padding: 0; 
+    width:220px;
+    border-right:0px;
+}
+
+
+/* exhibit-page-nav is used once in plugins/ExhibitBuilder/helpers */
+/* file ExhibitPageFunctions.php, function exhibit_builder_page_nav
+/* exhibit-nested-section does not seem to be used in any */
+/* of the usual places */
+/* NOTE that there are some styles declared for exhibit-page-nav */
+/* that were originally defined in burgundy.css; these are now */
+/* further down in the file. */
+/* =Page Navigation= */
+.exhibit-nested-section,
+.exhibit-page-nav {
+    list-style-type:none;
+    width:100%;
+    padding:0px;
+    margin:0;
+}
+
+.exhibit-page-nav li a {
+    text-decoration:none;
+}
+
+.exhibit-page-nav li a:hover {
+    text-decoration:underline;
+}
+
+.exhibit-page-nav li.current,
+.exhibit-page-nav li.current a,
+.exhibit-page-nav li.current a:visited  {
+    color: #77403e;
+    text-decoration:underline;
+}
+
+.exhibit-page-nav li.current a:hover,
+.exhibit-page-nav li.current a:visited:hover {
+    color:#77403e;
+    text-decoration:underline;
+}
+
+/* Following exhibit-page-nav rules come from the original burgundy.css */
+/* see how it jives with what is above */
+.exhibit-page-nav {
+    list-style-type:square;
+    width:100%;
+/*    padding:1px;
+    padding-top:0px; */
+}
+
+
+.exhibit-page-nav li a {
+    text-decoration:none;
+    color:#eee;
+}
+
+.exhibit-page-nav li a:hover {
+    text-decoration:underline;
+}
+
+/* fcd1, 8/12/13: The following is used to set current, i.e. links */
+/* that lead to the current page */
+/* removed the bold, basically does nothing now */
+.exhibit-page-nav li.current,
+.exhibit-page-nav li.current a, 
+.exhibit-page-nav li.current a:visited  {
+    color: #fff; 
+/*    font-weight:bold; */
+    text-decoration:none;
+}
+
+.exhibit-page-nav li.current a:hover,
+.exhibit-page-nav li.current a:visited:hover {
+    color:#fff;
+    text-decoration:underline;
+}
+
+/* exhibit-section-nav is used in /exhibit-builder/exhibits/item.php, summary.php, show.php */
+.exhibit-section-nav {
+    width: 164px;
+    overflow:hidden; 
+}
+
+.exhibit-section-nav li {
+    width:auto;
+    list-style-type:none;
+    display:block;
+}
+
+.exhibit-section-nav li a {
+    display:block;
+    text-decoration:none;
+    padding:.5em;
+}
+
+/* Following exhibit-section-nav rules come from the original burgundy.css */
+.exhibit-section-nav {
+    background: #661E19; 
+    width:100%;
+    display:block;
+    overflow:hidden; 
+}
+
+ul.exhibit-section-nav {
+    padding: 0; 
+    margin: 0; 
+    width=100%;
+}
+
+.exhibit-section-nav li {
+    width:auto;
+    list-style-type:none;
+    display:block;
+    text-align:left;
+    line-height:1.5em;
+    padding:0.5em 0;
+}
+
+.exhibit-section-nav li a {
+    color:#fff;
+    text-decoration:none;
+    width:100%;
+    display:block;
+    padding:0.5em 0.5em 0.5em 1em
+}
+
+/* exhibit-section-nav-home is used in cul-general/exhibit-builder/exhibits/summary.php */
+/* Following come from the original burgundy.css */
+/* Some overrides for the "Home" link */
+.exhibit-section-nav-home {
+    background:#994444;
+    font-weight:bold;
+}
+
+/* exhibit-text used in plugins/ExhibitBuilder/views/shared/exhibit_layouts */
+.exhibit-text ul {
+    list-style-type:circle;
+    padding-left:15px;
+}
+
+.exhibit-text ol {
+    list-style-type: decimal;
+    padding-left:15px;
+}
+
+.exhibit-text ul li,
+.exhibit-text ol li {
+    padding-bottom:6px;
+}
+
+/* following used in plugins/ExhibitBuilder/views/shared/exhibit_layouts: */
+/* image-list-left, image-list-right, image-text-group */
+.image-list-left .image-text-group,
+.image-list-right .image-text-group {
+    width:auto;
+}
+
+.image-list-left IMG.full  {
+    width:100%;
+    float:left;
+}
+
+.image-list-left .exhibit-text  {
+    width:250px;
+    height:auto;
+    float:right;
+}
+
+.image-list-right IMG.full {
+    width:100%;
+    float:right;
+}
+
+.image-list-right .exhibit-text  {
+    width:250px;
+    height:auto;
+    float:left;
+}
+
+.image-list-left .exhibit-item {
+    float:left;
+    margin-top:10px;
+    border-bottom:1px solid #eee;
+}
+
+.image-list-right .exhibit-item {
+    float:right;
+    margin-top:10px;
+    border-bottom:1px solid #eee;
+}
+
+/* preNext used in cul-general/exhibit-builder/exhibits/show.php */
+.prevNext,
+.prevNext a,
+.prevNext a:visited {
+    font-size:11px;
+    color:#333;
+    text-align:right;
+    padding:5px;
+    clear:both;
+}
+
+/* Styles for classes used in php files in cul-general/exhibit-builder/exhibits */
+/* Some of these may need to be weeded out later on or renamed, for example */
+/* exhbition-section-nav, which probably needs to be renamed */
+/* =Exhibit Navigation= */
+
+/**************************************************/
+/* Following come from the original burgundy.css */
+/**************************************************/
+
+#primary h1 {
+    font-size:22px;
+    color: #336699;
+    margin-bottom:1.25em;
+    line-height:1.125em;
+    border-bottom:1px solid #336699;
+}
+
+#primary h2 {
+    font-size:1.5em;
+    color: #336699;
+    margin-bottom:1.25em;
+    line-height:1.125em;
+    font-weight:bold;
+}
+
+/* == Content == */
+#exhibit-sections h3 {
+    margin: 5px 0 0 0;
+    padding:0px;
+    font-weight:bold;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+
+#exhibit-sections h3 a,
+#exhibit-sections h3 a:visited {
+    text-decoration: none;
+    color: #336699;
+}
+
+#exhibit-sections h3 a:hover {
+    color: #dbcab1;
+}
+
+
+/* Some overrides for the "Home" link */
+.exhibit-section-nav-home li a {
+    color:#fff;
+}
+
+.exhibit-section-nav .current a,
+.exhibit-section-nav .current a:visited {
+    background:#994444;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+/* fcd1, 7/23/13: This handles hovering over the lhs navigation list */
+/* fcd1, 7/29/13: exhibit-section-nav was used inside the method */
+/* exhibit_builder_section_nav, which does not exist anymore. It was used as */
+/* class attribute for ul */
+.exhibit-section-nav li a:hover, .exhibit-section-nav li a:visited:hover {
+    font-weight:bold; 
+    color: #fff;
+    background-color:#994444;
+}
+
+/* Following 2 may not be used, can't find exhibit-nested-section in code */
+.exhibit-nested-section .current a,
+.exhibit-nested-section .current a:visited {
+    font-weight:bold;
+}
+
+.exhibit-nested-section .current a:hover,
+.exhibit-nested-section .current a:visited:hover {
+    font-weight:bold;
+}
+
+/* exhibit-nested-section is not used in any of the code */
+/* exhibit-page-nav is used in plugins/ExhibitBuilder/helpers */
+
+/* == nested sections == */
+
+.exhibit-nested-section .exhibit-page-nav a,
+.exhibit-nested-section .exhibit-page-nav a:visited,
+.exhibit-nested-section .exhibit-page-nav a:hover,
+.exhibit-nested-section .exhibit-page-nav a:visited:hover {
+    font-weight:normal;
+    color: #ffffff;
+    background: none;
+    padding-bottom:1px;
+}
+
+.exhibit-nested-section .exhibit-page-nav .current a,
+.exhibit-nested-section .exhibit-page-nav .current a:visited,
+.exhibit-nested-section .exhibit-page-nav .current a:hover,
+.exhibit-nested-section .exhibit-page-nav .current a:visited:hover {
+    font-weight:bold;
+    color: #ffffff;
+    background:none;
+    padding-bottom:1px;
+}
+
+/* fcd1, 7/25/13: To hide the Omeka admin toolbar that appears (with the admin's name */
+/* create an empty admin-bar.php in cul-general/common/ */
+
+/* fcd1, 7/31/13: new class attribute and style to handle exhibit-nav */
+/* use class as attribute to div inside td that contains the navigation list */
+.cul-general-exhibit-nav-td {
+    background: #661E19;
+/* fcd1, 8/12/13: changed width to 218px */
+    width: 218px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+}
+
+.cul-general-exhibit-nav-div {
+    list-style-type: none;
+    background: #661E19;
+    padding-left: 0em;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cul-general-exhibit-nav-ul {
+    list-style-type: none;
+    background: #661E19;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cul-general-exhibit-nav-ul ul {
+    list-style-type: none;
+    background: #661E19;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cul-general-exhibit-nav-ul .cul-general-exhibit-nav-parent {
+    padding-left: 2em;
+}
+
+#cul-general-exhibit-nav-title {
+    /* background: #994444; */
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.exhibit-page-nav li a,
+.exhibit-child-nav li a {
+    color: #fff;
+    text-decoration: none;
+    /* width: 100%; */
+    width: auto;
+    display: block;
+}
+
+.exhibit-page-nav li a {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.exhibit-child-nav li a {
+    padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.cul-general-exhibit-nav-div li a.exhibit-title {
+color: #fff;
+text-decoration: none;
+/* width: 100%; */
+width: auto;
+display: block;
+padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* fcd1, 8/8/13: this is the one that controls the hover on the summary.php nav menu */
+.cul-general-exhibit-nav-div li a:hover {
+    /* fcd1, 8/8/13: from brown.css */
+    text-decoration:underline;
+    color: #77403e;
+    /* background-color:#dbcab1; */
+    /* border-bottom: 1px solid #994444;
+    border-top: 1px solid #77403e; */
+    /* end of brown.css stuff */
+
+
+    /* font-weight:bold; */
+    color: #fff;
+    background-color:#994444;
+}
+
+/* fcd1, 12Aug13: added following, took .exhibit-page-nav defined previously */
+/* and made it more specific by adding .cul-general-exhibit-nav-div */
+.cul-general-exhibit-nav-div .exhibit-page-nav,
+.cul-general-exhibit-nav-div .exhibit-child-nav {
+    list-style-type:none;
+    /* fcd1, 8/12/13: changed width to auto from 100% */
+    width:auto;
+	/*    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:12px; 
+    padding-right:0px; */
+    margin:0;
+}
+
+#secondary-nav {
+    list-style-type:none;
+    /* fcd1, 8/12/13: changed width to auto from 100% */
+    width:auto;
+/*    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:0px;
+    padding-right:0px; */
+    margin:0;
+}
+
+/* fcd1, 12Aug13: moved this here, and also changed the padding */
+/* Note that there seems to be another copy of this rule in the file */
+/* according to the chrome dev tools */
+/* remove padding-bottom, remove margin-left (used to be 1em) */
+/* and instead use padding-left */
+.exhibit-page-nav li {
+    display:block;
+    width:auto;
+/*    margin-top:0px;
+    margin-left:1em; */
+    text-align: left;
+/*    padding-left:.5em; */
+}
+
+.cul-general-content-td {
+    width: 730px;
+    overflow: hidden;
+}
+
+#wrap table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.cul-general-solid-block img {
+    vertical-align: bottom;
+    margin-left: -1em;
+}
+
+.exhibit-description, 
+.exhibit-credits,
+.exhibit-sections {
+    padding: 0 0.5em;
+}
+
+/* fcd1, 24Aug13: color scheme specific styles */
+.blue .cul-general-exhibit-nav-div,
+.blue .cul-general-exhibit-nav-td {
+    background: #003366;
+}
+
+.brown .cul-general-exhibit-nav-div,
+.brown .cul-general-exhibit-nav-td {
+    background: #ffffff;
+}
+
+.brown .cul-general-content-td {
+    border-left: 1px solid #c7b5a2;
+}
+
+.brown .exhibit-page-nav a,
+.brown .exhibit-page-nav li.current a {
+    color: #77403e;
+}
+
+.brown .exhibit-page-nav li.current a {
+	text-decoration:underline;
+}
+
+.blue .cul-general-exhibit-nav-div li a:hover {
+    background-color:#99ccff;
+}
+
+.brown .cul-general-exhibit-nav-div li a {
+	border-bottom:1px solid #fff;
+	border-top:1px solid #fff;
+}
+
+.brown .cul-general-exhibit-nav-div li a:hover {
+    background-color:#dbcab1;
+    color: #77403e;
+	border-bottom:1px solid #77403e;
+	border-top:1px solid #77403e;
+}
+
+.brown .cul-general-exhibit-nav-div li.current a {
+/*	font-weight:bold; */
+}
+
+.blue h1,
+.blue h2,
+.blue h3,
+.blue h3 a,
+.blue h4, 
+.blue h5 {
+    color: #336699;
+}
+
+.blue .cul-general-solid-block,
+.blue .keycolor {
+    background-color: #336699;
+}
+
+.burgundy .keycolor {
+    background-color:#994444;
+}
+
+.brown .keycolor {
+    background-color: #77403e;
+}
+
+/* fcd1, 8/28/13: all of the following are copied straight from the various 
+layout.css file. This is needed because this file is not being loaded when we are
+at a top-level page, but we want to display the content from the first child page,
+i.e. mimic the section behavior from 1.5.3.
+Note that the following may need to be tweaked in case there were cul-general
+specific changes earlier in this file */
+
+.gallery-thumbnails .exhibit-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    /* IE 7 */
+    *display: inline;
+    zoom: 1;
+}
+
+.gallery-thumbnails .exhibit-item img {
+    max-width: 100%;
+}
+
+
+.image-list-left .image-text-group {
+    overflow:hidden;
+    zoom:1;
+}
+
+.image-list-left .exhibit-item {
+    float:left;
+    width: 48%;
+    margin-bottom:2%;
+}
+
+.image-list-left .exhibit-item img {
+    max-width:100%;
+}
+
+.image-list-left .exhibit-text {
+    float:right;
+    width: 48%;
+}
+
+
+.image-list-right .image-text-group {
+    overflow:hidden;
+    zoom:1;
+}
+
+.image-list-right .exhibit-item {
+    float:right;
+    width: 48%;
+    margin-bottom:2%;
+}
+
+.image-list-right .exhibit-item img {
+    max-width:100%;
+}
+
+.image-list-right .exhibit-text {
+    float:left;
+    width: 48%;
+}
+
+
+.image-list-left-thumbs .image-text-group {
+    overflow:hidden;
+    zoom:1;
+}
+
+.image-list-left-thumbs .exhibit-item {
+    float:left;
+    width: 23%;
+    margin-bottom:2%;
+}
+
+.image-list-left-thumbs .exhibit-item img {
+    max-width:100%;
+}
+
+.image-list-left-thumbs .exhibit-text {
+    float:right;
+    width: 73%;
+}
+
+
+.image-list-right-thumbs .image-text-group {
+    overflow:hidden;
+    zoom:1;
+}
+
+.image-list-right-thumbs .exhibit-item {
+    float:right;
+    width: 23%;
+    margin-bottom:2%;
+}
+
+.image-list-right-thumbs .exhibit-item img {
+    max-width:100%;
+}
+
+.image-list-right-thumbs .exhibit-text {
+    float:left;
+    width: 73%;
+}
+
+.text-full .text-full .primary {
+    width:auto; 
+    float:none;
+}
+
+.text-image-left .image-left {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.text-image-left .exhibit-item img {
+    max-width: 100%;
+}
+
+.text-image-left .exhibit-item-caption p {
+    margin-bottom: 0;
+}
+
+.text-image-right .image-right {
+    float: right;
+    width: 48%;
+    margin-left:2%;
+    margin-bottom:2%;
+}
+
+.text-image-right .exhibit-item img {
+    max-width: 100%;
+}
+
+.text-image-right .exhibit-item-caption p {
+    margin-bottom: 0;
+}
+
+a.link-to-item-page  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 0.75em;
+    margin-top: 1em;
+}
+
+.brown .cul-general-exhibit-nav-div li a.exhibit-title {
+    color: #77403e;
+}
+
+/* fcd1, 8/30/13: Robbie does not like vertical-align bottom
+div.exhibit-item {
+    height: auto;
+    vertical-align: bottom;
+}
+*/
+
+/* fcd1, 9/6/13: item.php stuff */
+#item-page-content td {
+	padding:20px;
+	background-color:#fff;
+}
+
+.item-file a {
+	float: right;
+	top: 0;	
+	margin-right: 50px;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;
+/*	background: #eee; */
+	background: #fff;
+	width: 250px;
+}
+
+.item-file {
+	background-color:#fff;
+	margin-bottom:0px;
+}
+
+.item-file img {
+	background: #fff;
+}
+
+.blue .cul-general-exhibit-nav-div li.current {
+    background-color:#99ccff;
+}
+
+.cul-general-exhibit-nav-div li {
+    margin-top:2px;
+}
+
+ul.exhibit-child-nav {
+    padding: 0 0 0 18px;
+}
+
+/* add color theme class if needed. Check burgundy */
+.copyright-footer {
+	color: #fff;
+}
+
+.blue a.link-to-item-page  {
+	color:inherit;
+}
+
+div#primary + div.prevNext {
+	margin-bottom:2em;
+}
+
+.burgundy .exhibit-page-nav li.current {
+	background:#944;
+}
+
+/* fcd1, 9/26/13: needed to bring images above CUL widget top navbar */
+/* CUL widget (javascript) uses 1030, so go 1 up */
+div.highslide-container {
+    z-index: 1031 !important;
+}
+
+body.burgundy {
+	background: #eee;
+}
+
+.burgundy .footer11px,
+.burgundy .copyright-footer a {
+	color: #999;
+}
+
+.brown .copyright-footer a,
+.blue .copyright-footer a {
+	color: #fff;
+}
+
+.blue .exhibit-description a,
+.blue .exhibit-description a:visited,
+.blue .exhibit-text a,
+.blue .exhibit-text a:visited {
+	color: #369;
+}
+
+.gallery-full-left .exhibit-item img {
+    max-width: 98%;
+}
+
+.blue .summary #cul-general-exhibit-nav-title {
+    background: #9cf;
+}
+
+.burgundy .summary div.cul-general-solid-block {
+    background-color: #800;
+}
+
+.exhibit-text a {
+   word-wrap: break-word;
+}
