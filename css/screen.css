@@ -1238,7 +1238,7 @@ div.exhibit-item {
 	text-align: center;
 /*	background: #eee; */
 	background: #fff;
-	width: 250px;
+	width: 50%;
 }
 
 .item-file {
@@ -1320,4 +1320,34 @@ body.burgundy {
 
 .exhibit-text a {
    word-wrap: break-word;
+}
+
+/* fcd1, 01/16/14: */
+/* following rule applies to display of item.php */
+.exhibit-item-show .item-file.image-jpeg .full {
+    width: 100%;
+}
+
+/* fcd1, 01/16/14: */
+/* following rule applies to display of item.php */
+.exhibit-item-show #primary .item-title {
+    margin-bottom: 0em;
+}
+
+/* fcd1, 01/16/14: */
+/* following rule applies to display of item.php */
+.exhibit-item-show .element-set h3 {
+    padding: 5px 0 5px 0;
+}
+
+/* fcd1, 01/16/14: */
+/* following rule applies to display of item.php */
+.exhibit-item-show .item-file.image-jpeg a {
+    margin-right: 0px;
+}
+
+/* fcd1, 01/16/14: */
+/* following rule applies to display of item.php */
+.exhibit-item-show .item-file {
+    padding: 2px;
 }
