@@ -66,6 +66,3 @@
     ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap"> 
-      <?php
-        //fcd1, 7/25/13: moved code that displayed black exhibit title bar into summary.php
-      ?>

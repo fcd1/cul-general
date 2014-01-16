@@ -2,10 +2,11 @@
         echo head(array('title' => metadata('exhibit', 'title'),
 			'bodyclass' => 'exhibits show'));
       ?>
+
       <?php
-        // fcd1, 7/30/13: Following was removed from header.php and put here
-        // since exhibition specific. Following piece of code creates 
-        //exhibition title block, black background, lhs color rectangle
+        // Following piece of code creates exhibition title block, black background, lhs color rectangle
+        // This code can also be moved to common/header.php to display the title block on
+        // all three pages (summary.php, show.php, and item.php)
       ?>
       <h1 class="head">
         <span class="keycolor" style="height:30px;min-width:30px;display:inline">
@@ -17,6 +18,7 @@
           echo $title;
         ?>
       </h1>
+
       <table>
         <tr>
           <td class="cul-general-exhibit-nav-td">
