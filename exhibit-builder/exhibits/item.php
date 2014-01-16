@@ -10,7 +10,7 @@
 
 <div id="item-page-content">
   <div id="primary" class="show">
-    <h3>
+    <h3 class="exhibit-title-link">Exhibit: 
     <?php echo exhibit_builder_link_to_exhibit(null,null,array('class' => 'link-to-exhibit')); ?>
     </h3>
     <table>
