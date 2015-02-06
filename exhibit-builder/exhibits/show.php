@@ -38,7 +38,8 @@
                 <div class="exhibit-content">
                   <?
                     echo cul_general_breadcrumb(); 
-                    cul_legacy_exhibit_builder_render_exhibit_page();
+// cul_legacy_exhibit_builder_render_exhibit_page();
+exhibit_builder_render_exhibit_page();
                   ?>
                 </div> <!-- end class="exhibit-content"-->
               </div> <!-- end id="primary" -->
