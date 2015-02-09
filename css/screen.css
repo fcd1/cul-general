@@ -1376,3 +1376,86 @@ body.burgundy {
 .exhibit-item-show #citation #citation-value {
     margin-bottom: 0.5em;
 }
+
+/* fcd1, Feb 2015: */
+/* START of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
+
+.exhibit-content h3 {
+  padding-bottom: 15px;
+}
+
+.exhibit-block.layout-file-text {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+.layout-gallery .exhibit-gallery-item {
+  width: 22%;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+/* fcd1, 02/08/15: */
+/* following lines up top of captions. Needs to be slightly larger */
+/* then max-height for img */
+.layout-gallery .exhibit-gallery-item a.exhibit-item-link {
+/*  height: 180px; */
+}
+
+.layout-gallery .exhibit-gallery-item img {
+  max-width: 160px;
+  max-height: 160px;
+}
+
+.layout-file-text .exhibit-items.right.fullsize {
+  max-width: 48%; /* fcd1, 02/09/15: need this to supersede smaller value from layout.css */
+  width: 48%;
+  float: right;  
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.layout-file-text .exhibit-items.left.fullsize {
+  max-width: 48%; /* fcd1, 02/09/15: need this to supersede smaller value from layout.css */
+  width: 48%;
+  float: left;  
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.layout-gallery .gallery-showcase.right.with-left img,
+.layout-gallery .gallery-showcase.left.with-right img {
+  width: 100%;
+}
+
+.layout-gallery .gallery-text.showcase-right.gallery-left {
+  width: 48%;
+  float: right;
+  clear: right;
+}
+
+.layout-gallery .gallery-text.showcase-left.gallery-right {
+  width: 48%;
+  float: left;
+}
+
+.exhibit-block .exhibit-item-caption {
+  padding-top: 1em;
+}
+
+.exhibit-block .exhibit-items a.link-to-item-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.exhibit-block .exhibit-gallery-item a.link-to-item-page,
+.exhibit-block .gallery-showcase a.link-to-item-page {
+  margin-bottom: 10px;
+}
+
+/* fcd1, Feb 2015: */
+/* END of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
