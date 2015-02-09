@@ -1427,6 +1427,11 @@ body.burgundy {
   margin-bottom: 2%;
 }
 
+.layout-file-text .exhibit-items.right.thumbnail,
+.layout-file-text .exhibit-items.left.thumbnail {
+  width: 23%;
+}
+
 .layout-gallery .gallery-showcase.right.with-left img,
 .layout-gallery .gallery-showcase.left.with-right img {
   width: 100%;
