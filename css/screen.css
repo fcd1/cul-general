@@ -1448,6 +1448,14 @@ body.burgundy {
   float: left;
 }
 
+.layout-file-text .exhibit-items.center.fullsize {
+  float: center;
+  width: 90%;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .exhibit-block .exhibit-item-caption {
   padding-top: 1em;
 }
