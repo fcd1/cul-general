@@ -1,16 +1,28 @@
 <?php
+  // fcd1, 02/17/15: Since the cul-general theme may be used as the default
+  // theme for the omeka server, and the default theme can get called 
+  // outside of an exhibition (for example, while viewing an Omeka item)
+  // the exhibition-related code needs to be enclosed within a
+  // if (get_current_record('exhibit',false))
+  // statement to prevent it from being executed in case there is
+  // no exhibit in the current view. The second argument is set to
+  // false to keep the method from asserting if there is no record
+?>
+<?php
   echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),
 		  'bodyclass' => 'exhibits exhibit-item-show'));
 ?>
-
 <div id="item-page-content">
   <div id="primary" class="show">
+    <?php if (get_current_record('exhibit',false)):?>
     <h3 class="exhibit-title-link">Exhibition: 
     <?php echo exhibit_builder_link_to_exhibit(null,null,array('class' => 'link-to-exhibit')); ?>
     </h3>
+    <?php endif; ?>
     <table>
       <tr>
         <td>
+          <?php if (get_current_record('exhibit',false)):?>
           <?php
             // fcd1, 01/31/14:
             // Retrieve, in an array, the list of exhibit pages containing the current item.
@@ -42,6 +54,7 @@
 										 $exhibit_page_containing_item);
 	    }
           ?>
+          <?php endif; ?>
           <h1 class="item-title">Item Information</h1>
             <div id="itemfiles">
               <?php
