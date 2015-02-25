@@ -1433,19 +1433,24 @@ body.burgundy {
 }
 
 .layout-gallery .gallery-showcase.right.with-left img,
-.layout-gallery .gallery-showcase.left.with-right img {
+.layout-gallery .gallery-showcase.left.with-right img,
+.layout-gallery .gallery-showcase.right.with-right img,
+.layout-gallery .gallery-showcase.left.with-left img {
   width: 100%;
 }
 
 .layout-gallery .gallery-text.showcase-right.gallery-left {
   width: 48%;
+  /* fcd1 2/26/15  hid following for now
   float: right;
   clear: right;
+  */
 }
 
 .layout-gallery .gallery-text.showcase-left.gallery-right {
   width: 48%;
   float: left;
+  padding-left: 5px;
 }
 
 .layout-file-text .exhibit-items.center.fullsize {
