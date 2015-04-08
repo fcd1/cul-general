@@ -1324,7 +1324,7 @@ body.burgundy {
 
 /* fcd1, 01/16/14: */
 /* following rule applies to display of item.php */
-.exhibit-item-show .item-file.image-jpeg .full {
+.exhibit-item-show .item-file img.full {
     width: 100%;
 }
 
@@ -1342,7 +1342,7 @@ body.burgundy {
 
 /* fcd1, 01/16/14: */
 /* following rule applies to display of item.php */
-.exhibit-item-show .item-file.image-jpeg a {
+.exhibit-item-show .item-file a {
     margin-right: 0px;
 }
 
