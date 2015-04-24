@@ -1482,6 +1482,15 @@ body.burgundy {
   padding-right: 1em;
 }
 
+.exhibit-block.layout-text {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.exhibit-description {
+  padding: 1em;
+}
+
 /* fcd1, Feb 2015: */
 /* END of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
 
