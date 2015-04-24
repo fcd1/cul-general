@@ -1474,11 +1474,9 @@ body.burgundy {
   margin-bottom: 10px;
 }
 
-.exhibit-block .exhibit-text.right.fullsize p {
-  padding-left: 1em;
-}
-
+.exhibit-block .exhibit-text.right.fullsize p,
 .exhibit-block .exhibit-text.left.fullsize p {
+  padding-left: 1em;
   padding-right: 1em;
 }
 
