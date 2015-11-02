@@ -11,6 +11,35 @@
       <?php echo cul_copyright_information();?>
     </p>
 
+    <?php
+      // Set variable used in CUL widget below                                                                                                             
+    $cul_widget_foreground_color = "foo";
+$cul_widget_background_color;
+
+switch ( get_theme_option('Color Scheme') ) {
+
+ case "brown":
+
+   $cul_widget_foreground_color = "#222";
+   $cul_widget_background_color = "#86868C";
+   break;
+
+ case "blue":
+
+   $cul_widget_foreground_color = "";
+   $cul_widget_background_color = "";
+   break;
+
+ case "burgundy":
+
+   $cul_widget_foreground_color = "#222";
+   $cul_widget_background_color = "#661E19";
+   break;
+
+ }
+    ?>
+    <h1><?php echo $cul_widget_foreground_color ?></h1>
+    <h1><?php echo get_theme_option('Color Scheme') ?></h1>
 
     <!-- CULTNBW START -->
 
@@ -23,6 +52,8 @@
     <script type="text/javascript">
 	CULh_style = 'staticlink'; // limited, staticlink, static, search, standard (default)
 	//CULh_width = ''; // fixed, fluid (default)
+	CULh_colorfg = <?php echo "'" . $cul_widget_foreground_color . "'"?>;
+	CULh_colorbg = <?php echo "'" . $cul_widget_background_color . "'"?>;
 	//CULh_colorfg = '#333333'; // topnavbar foreground color. hex value. ex: #002B7F
 	//CULh_colorbg = '#666666'; // topnavbar background color. hex value. ex: #779BC3
 	//CULh_nobs = 1; // uncomment to NOT load our bootstrap javascript file and or use your own (v2.3.x required)
