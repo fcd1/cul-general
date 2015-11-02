@@ -38,8 +38,6 @@ switch ( get_theme_option('Color Scheme') ) {
 
  }
     ?>
-    <h1><?php echo $cul_widget_foreground_color ?></h1>
-    <h1><?php echo get_theme_option('Color Scheme') ?></h1>
 
     <!-- CULTNBW START -->
 
