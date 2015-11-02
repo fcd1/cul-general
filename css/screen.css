@@ -131,18 +131,18 @@ h5 a, h5 a:visited {
 }
 
 #content {
-    float: right;
+    # float: right;
     overflow: hidden;
     min-height:400px;
     border-left: 1px solid #c7b5a2;
     padding:0 9px;
-    width: 713px;
+    # width: 713px;
     background:#fff;
 }
 
 html.brown #content {
     padding:0 9px;
-    width: 712px;
+    # width: 712px;
     border: none;
 }
 
