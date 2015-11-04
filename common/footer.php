@@ -13,9 +13,6 @@
 
     <?php
       // Set variable used in CUL widget below                                                                                                             
-    $cul_widget_foreground_color = "foo";
-$cul_widget_background_color;
-
 switch ( get_theme_option('Color Scheme') ) {
 
  case "brown":
